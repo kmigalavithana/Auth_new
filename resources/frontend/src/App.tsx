@@ -1,17 +1,12 @@
-import './App.css'
 import * as React from "react";
+import AppRoutes from "./Utilities/AppRoutes.tsx";
 
 const App: React.FC  = () => {
 
 
   return (
     <>
-        <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </div>
-
+    <AppRoutes/>
     </>
   )
 }
