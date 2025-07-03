@@ -10,8 +10,18 @@ const SignIn: React.FC = () => {
         password: ''
     });
 
+    const handleInputField = (event) => {
+            const {name,value}=event.target
+
+        setSignDtails((prevState) => ({
+            ...prevState,
+            [name]: value
+        }))
+    }
+    console.log(signDtails);
+
     return (
-       <SigninForm />
+       <SigninForm handleInputField={handleInputField}/>
     );
 };
 
