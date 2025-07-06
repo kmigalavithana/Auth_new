@@ -1,5 +1,10 @@
 import * as React from "react";
 import AppRoutes from "./Utilities/AppRoutes.tsx";
+import axios from "axios";
+
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
+axios.defaults.withCredentials = true;
+
 
 const App: React.FC  = () => {
 
